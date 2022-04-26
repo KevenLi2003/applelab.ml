@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, button {
+  font-family: "Lato", "Helvetica Neue", arial, sans-serif;
+  background: #1a1a1a;
+  background: #0d0d0d;
+}
+
+a {
+  text-decoration: none;
+}
+
+.toggle {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 1em 2em;
+}
+.toggle:hover {
+  background: black;
+}
+.toggle i {
+  padding-left: 0.5em;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown .toggle i {
+  padding-left: 0.5em;
+  width: 10px;
+  opacity: 0.5;
+}
+.dropdown .options {
+  display: none;
+  position: absolute;
+  background: #333;
+  width: 100%;
+  z-index: 2;
+}
+.dropdown .options a {
+  color: #fff;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 0.7em 0.5em;
+}
+.dropdown .options a:hover {
+  background: #1a1a1a;
+}
+.dropdown.active .toggle {
+  background: #1a1a1a;
+}
+.dropdown.active .options {
+  display: block;
+}
+
+.controls {
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label {
+  font-weight: 300;
+  margin: 0 0.4em 0 0;
+}
+
+button {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.active {
+  background: #68b8c4;
+}
+button:focus {
+  outline: 0 none;
+}
+
+button + label {
+  margin-left: 1em;
+}
+
+.container {
+  padding: 4% 2% 0;
+  text-align: justify;
+  -webkit-backface-visibility: hidden;
+}
+.container:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.container .mix,
+.container .gap {
+  display: inline-block;
+  width: 99%;
+}
+.container .mix {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  margin-bottom: 2%;
+  height: 350px;
+  display: none;
+  position: relative;
+}
+.container .mix span, .container .mix .photo {
+  position: absolute;
+  display: block;
+  text-align: center;
+}
+.container .mix .name {
+  top: 225px;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 10px #000;
+  transition: all 0.5s;
+  z-index: 5;
+}
+.container .mix .category, .container .mix .type {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  background: #1f1f1f;
+}
+.container .mix .type {
+  top: 0px;
+  transition: all 0.2s;
+  z-index: 1;
+  color: #666;
+}
+.container .mix .type:after {
+  content: " is";
+}
+.container .mix .category {
+  bottom: 0;
+  transition: all 0.5s;
+  font-size: 0.9em;
+}
+.container .mix .photo {
+  top: 25px;
+  left: 50%;
+  overflow: hidden;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: -100px;
+  transition: all 0.5s;
+}
+.container .mix .photo img {
+  width: 100%;
+}
+.container .mix i {
+  display: block;
+  margin: 0 auto;
+  font-size: 10px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  bottom: -25px;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -12.5px;
+  color: #fff;
+  z-index: 2;
+  transition: all 0.5s;
+}
+.container .mix.category-sweet {
+  border-bottom: 6px solid #c45d5f;
+}
+.container .mix.category-sweet i {
+  background-color: #c45d5f;
+}
+.container .mix.category-sweet .category {
+  background-color: #c45d5f;
+}
+.container .mix.category-savory {
+  border-bottom: 6px solid #609f80;
+}
+.container .mix.category-savory i {
+  background-color: #609f80;
+}
+.container .mix.category-savory .category {
+  background-color: #609f80;
+}
+.container .mix.category-salty {
+  border-bottom: 6px solid #c6a52c;
+}
+.container .mix.category-salty i {
+  background-color: #c6a52c;
+}
+.container .mix.category-salty .category {
+  background-color: #c6a52c;
+}
+.container .mix:hover .type {
+  height: 70px;
+  padding: 1em;
+}
+.container .mix:hover .category {
+  height: 70px;
+  padding: 1em;
+}
+.container .mix:hover i {
+  bottom: 0;
+  font-size: 18px;
+}
+.container .mix:hover .name {
+  top: 220px;
+}
+.container .mix:hover .name:after {
+  content: "in";
+  font-family: "Niconne", cursive;
+  position: absolute;
+  width: 100%;
+  text-transform: none;
+  top: 42px;
+  left: 0;
+  font-size: 18px;
+  font-weight: normal;
+  text-shadow: none;
+}
+.container .mix:hover .photo {
+  margin-top: 25px;
+  width: 160px;
+  height: 160px;
+  margin-left: -80px;
+}
+
+.container .mix:after {
+  content: attr(data-myorder);
+  font-size: 12px;
+  display: block;
+  margin: 0 auto -20px;
+  width: 3vw;
+  height: 3vw;
+  line-height: 3vw;
+  border-radius: 50%;
+  display: none;
+}
+
+@media all and (min-width: 420px) {
+  .container .mix,
+.container .gap {
+    width: 49%;
+  }
+}
+@media all and (min-width: 800px) {
+  .container .mix,
+.container .gap {
+    width: 32%;
+  }
+}
