@@ -29,13 +29,17 @@
                 }
 
                 .social-link {
-                    background-color: lightblue;
-                    border: 5px solid gold;
+                    transition: box-shadow .3s;
                     width: 300px;
-                    border-radius: 1em;
-                    display: inline-grid;
-                    color: black;
-                    justify-items: center;
+                    margin: 50px;
+                    border-radius:10px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    float: left;
+                }
+
+                .social-link:hover {
+                    box-shadow: 0 0 11px rgba(33,33,33,.2);
                 }
             </style>
 
@@ -95,11 +99,11 @@
 
         <footer class="footer">
             <div class="footer__addr">
-                <h1 class="footer__logo">Something</h1>
+                <h1 class="footer__logo">Apple Lab</h1>
                 <h2>Contact</h2>
                 <address>
-                    5534 Somewhere In. The World 22193-10212<br>
-                    <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+                    7171 Minoru Blvd, Richmond, B.C. Canada V6Y 1Z3<br>
+                    <a class="footer__btn" href="mailto:richmond@sd38.bc.ca">Email Us</a>
                 </address>
             </div>
 
@@ -107,22 +111,23 @@
                 <li class="nav__item">
                     <h2 class="nav__title"><b>Media</b></h2>
                     <ul class="nav__ul">
-                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://twitter.com/apple_lab_ca">Twitter</a></li>
                         <li><a href="https://www.facebook.com">Facebook</a></li>
                         <li><a href="https://www.instagram.com">Instagram</a></li>
                     </ul>
                 </li>
 
                 <li class="nav__item nav__item--extra">
-                    <h2 class="nav__title">Technology</h2>
+                    <h2 class="nav__title">Navigations</h2>
 
                     <ul class="nav__ul nav__ul--extra">
-                        <li><a href="#">Hardware Design</a></li>
-                        <li><a href="#">Software Design</a></li>
-                        <li><a href="#">Digital Signage</a></li>
-                        <li><a href="#">Automation</a></li>
-                        <li><a href="#">Artificial Intelligence</a></li>
-                        <li><a href="#">IoT</a></li>
+                        <li><a href="index.html">Apple Lab</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news/index.html">News</a></li>
+                        <li><a href="videos/index.html">Videos</a></li>
+                        <li><a href="deals/index.html">Deals</a></li>
+                        <li><a href="guides/index.html">Guides</a></li>
+                        <li><a href="login/index.html">Login</a></li>
                     </ul>
                 </li>
 
@@ -137,10 +142,10 @@
             </ul>
 
             <div class="legal">
-                <p style="font-size: smaller">&copy; 2019 Something. All rights reserved. Copyright Keven Li, grade 12 student. Site published for AutoCAD Advanced Personal Inquiry project.</p>
+                <p style="font-size: smaller">&copy; 2022 Apple Lab. All rights reserved. Copyright Keven Li, grade 12 student. Site published for AutoCAD Advanced Personal Inquiry project.</p>
 
                 <div class="legal__links">
-                    <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+                    <span>Made with <span class="heart">♥</span> remotely from <a href="index.html" style="text-decoration: underline; color: black">Apple Lab</a></span>
                 </div>
             </div>
         </footer>
