@@ -13,15 +13,34 @@
             <style>
                 @import "header.css";
                 @import "category-button.css";
+                @import "button-styles.css";
 
                 html {
                     font-family: 'Lato', sans-serif;
                 }
 
-                .video-list-iframe {
-                    margin: 20px;
-                    border-radius: 3em;
-                    border: 10px solid gold;
+                .video-cover {
+                    width: 300px;
+                    border-radius: 0.5rem;
+                    margin: 5px;
+                }
+
+                table {
+                    width: 1200px;
+                    justify-self: center;
+                    justify-content: center;
+                }
+
+                tr, td {
+                    transition: box-shadow .3s;
+                    background-color: white;
+                    border-radius: 1em;
+                    border: 2px solid black;
+                    text-align: center;
+                }
+
+                tr, td:hover {
+                    box-shadow: 5px 5px 5px 5px darkgrey;
                 }
             </style>
 
@@ -48,30 +67,70 @@
             <button class="custom-btn btn-5"><span>Software</span></button>
         </center>
 
-        <center>
-        <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
-        <center>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
-        <center>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
-        <center>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
-        <center>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
-        <center>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe loading="lazy" class="video-list-iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/80vIin4xGp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
+        <table>
+            <tr>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+                <td>
+                    <img src="https://img.youtube.com/vi/80vIin4xGp8/0.jpg" alt="hack home network cover" class="video-cover">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=80vIin4xGp8&t=1569s"><button type="button" class="custom-btn btn-11">Watch</button></a>
+                    <a href="https://www.youtube-nocookie.com/embed/80vIin4xGp8"><button type="button" class="custom-btn btn-11">Watch (Private)</button></a>
+                </td>
+            </tr>
+        </table>
+
+
         </body>
 
         <footer class="footer">

@@ -19,6 +19,7 @@ body {
 .footer {
   display: flex;
   flex-flow: row wrap;
+  margin: 20px;
   padding: 30px 30px 20px 30px;
   color: #2f2f2f;
   background-color: #fff;
