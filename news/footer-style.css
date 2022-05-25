@@ -36,9 +36,8 @@ body {
 }
 
 .footer__logo {
-  font-family: 'Pacifico', cursive;
+  font-family: Lato, sans-serif;
   font-weight: 400;
-  text-transform: lowercase;
   font-size: 1.5rem;
 }
 
