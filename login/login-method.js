@@ -8,10 +8,10 @@ function comparePassword() {
         window.location.href = '../home/index.html';
         let signInState = true;
     } else if (userEmailInput != correctEmail && userPasswordInput == correctPassword) {
-            window.alert('你输入的邮箱尚未注册!');
+            window.alert('This email has not been registered yet');
         } else if (userEmailInput == correctEmail && userPasswordInput != correctPassword) {
-        window.alert('密码错误!')
+        window.alert('Password error!')
     } else if (userEmailInput != correctEmail && userPasswordInput != correctPassword) {
-        window.alert('请输入正确的邮箱和密码!')
+        window.alert('Please enter the correct password!')
     }
 }

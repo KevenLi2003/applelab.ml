@@ -2,7 +2,7 @@ function emailCheck() {
     let userEmailInput = document.getElementById("userEmail").value;
     let correctEmail = "vtam@sd38.bc.ca";
     if (userEmailInput != correctEmail) {
-        window.alert("此邮箱还未注册！")
+        window.alert("This email has not been registered yet!")
     }
 }
 
@@ -10,7 +10,7 @@ function comparePassword() {
     let newPassword = document.getElementById("userNewPassword").value;
     let correctPassword = 618618;
     if (newPassword == correctPassword) {
-        window.alert("新密码和旧密码不可一样！");
+        window.alert("The new and old password can't be the same!");
     }
 }
 
@@ -18,8 +18,8 @@ function checkPassword() {
     let reEnterPassword = document.getElementById("userNewPassword").value;
     let userConfirmNewPassword = document.getElementById("userConfirmNewPassword").value;
     if (reEnterPassword == userConfirmNewPassword) {
-        window.alert("两次输入的密码是一样的!")
+        window.alert("The two password inputs are the sane!")
     } else {
-        window.alert("请检查两次输入的密码!")
+        window.alert("Please check the password input")
     }
 }
